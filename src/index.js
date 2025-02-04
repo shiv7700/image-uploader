@@ -84,3 +84,8 @@ app.get("/test", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+console.log(
+  process.env.DB_CONNECTION_STRING,
+  "process.env.DB_CONNECTION_STRING"
+);
